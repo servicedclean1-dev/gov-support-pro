@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="md:col-span-2">
             <h3 className="font-heading text-lg font-bold">[INSERT YOUR COMPANY NAME]</h3>
             <p className="mt-3 max-w-md text-sm leading-relaxed text-primary-foreground/70">
-              An integrated government services company delivering facilities management, logistics, and operational support across the public sector.
+              A government services company delivering facilities management, logistics, and operational support across the public sector.
             </p>
           </div>
           <div>
