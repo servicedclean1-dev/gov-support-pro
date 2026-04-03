@@ -218,23 +218,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Stats / Trust */}
-      <section className="py-20">
-        <div className="container">
-          <div className="grid gap-8 sm:grid-cols-3 text-center">
-            {[
-              { stat: "100+", label: "Facilities Managed" },
-              { stat: "500+", label: "Team Members" },
-              { stat: "99%", label: "Client Retention" },
-            ].map((s) => (
-              <div key={s.label}>
-                <p className="font-heading text-4xl font-extrabold text-primary">{s.stat}</p>
-                <p className="mt-1 text-sm text-muted-foreground">{s.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA / Contact */}
       <section className="bg-primary py-20">
