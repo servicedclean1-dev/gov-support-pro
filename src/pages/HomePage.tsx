@@ -201,25 +201,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Industries */}
-      <section className="border-y bg-navy-deep py-20">
-        <div className="container">
-          <div className="mx-auto max-w-2xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-widest text-accent-foreground/60">Industries We Serve</p>
-            <h2 className="mt-3 font-heading text-2xl font-bold text-primary-foreground md:text-3xl">
-              Trusted Across the Public Sector
-            </h2>
-          </div>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {industries.map((ind) => (
-              <div key={ind.label} className="flex flex-col items-center rounded-xl border border-primary-foreground/10 bg-primary-foreground/5 p-8 text-center">
-                <ind.icon className="h-10 w-10 text-accent" />
-                <span className="mt-4 font-heading text-base font-semibold text-primary-foreground">{ind.label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Stats / Trust */}
       <section className="py-20">
