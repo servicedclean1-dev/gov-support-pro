@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import {
-  Building2, Truck, Users, HeartPulse, Sparkles, TreePine,
+  Building2, Truck, Users, Sparkles, TreePine,
   Wrench, PackageCheck, ClipboardList, ShieldCheck, CheckCircle,
   ArrowRight, TrendingUp, Landmark, Hospital, Building, Globe,
 } from "lucide-react";
@@ -34,12 +34,6 @@ const coreServices = [
     title: "Logistics & Distribution",
     description: "Reliable transport, warehousing, inventory management, and supply chain coordination for mission-critical operations.",
     color: "bg-trust-green/20 text-trust-green",
-  },
-  {
-    icon: HeartPulse,
-    title: "Care & Supported Living",
-    description: "Expanding into compassionate care, community support programmes, and facility-based personal assistance services.",
-    color: "bg-primary/10 text-primary",
   },
 ];
 

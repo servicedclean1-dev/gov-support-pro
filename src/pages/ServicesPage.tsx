@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import {
-  Building2, Truck, Users, HeartPulse, Sparkles, TreePine,
+  Building2, Truck, Users, Sparkles, TreePine,
   Wrench, PackageCheck, ClipboardList, ArrowRight, CheckCircle,
 } from "lucide-react";
 import servicesBg from "@/assets/services-bg.jpg";
@@ -46,18 +46,6 @@ const serviceCategories = [
       "Asset tracking & management",
     ],
   },
-  {
-    icon: HeartPulse,
-    title: "Care & Supported Living",
-    description: "Expanding our service portfolio into compassionate care and community support for government-sponsored programmes.",
-    services: [
-      "Personal care assistance",
-      "Community support programmes",
-      "Facility-based care support",
-      "Programme administration",
-    ],
-    comingSoon: true,
-  },
 ];
 
 const additionalServices = [
@@ -101,11 +89,6 @@ export default function ServicesPage() {
                 </div>
                 <h2 className="font-heading text-2xl font-bold text-foreground">
                   {cat.title}
-                  {cat.comingSoon && (
-                    <span className="ml-2 inline-block rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
-                      Coming Soon
-                    </span>
-                  )}
                 </h2>
                 <p className="mt-3 text-muted-foreground leading-relaxed">{cat.description}</p>
               </div>
