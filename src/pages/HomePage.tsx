@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import {
-  Building2, Truck, Users, HeartPulse, Sparkles, TreePine,
+  Building2, Truck, Users, Sparkles, TreePine,
   Wrench, PackageCheck, ClipboardList, ShieldCheck, CheckCircle,
   ArrowRight, TrendingUp, Landmark, Hospital, Building, Globe,
 } from "lucide-react";
