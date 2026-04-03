@@ -67,7 +67,7 @@ export default function CapabilityStatementPage() {
               <h2 className="font-heading text-xl font-bold text-foreground">Contact Information</h2>
               <div className="mt-4 space-y-1 text-sm text-muted-foreground">
                 <p><strong className="text-foreground">[INSERT YOUR COMPANY NAME]</strong></p>
-                <p>Washington, D.C. Metro Area</p>
+                <p>London, United Kingdom</p>
                 
                 <p>Email: info@yourcompany.com</p>
                 <p>Website: www.yourcompany.com</p>
