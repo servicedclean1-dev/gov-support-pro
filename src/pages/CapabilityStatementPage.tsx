@@ -80,8 +80,10 @@ export default function CapabilityStatementPage() {
               <p className="mt-2 text-sm text-muted-foreground">
                 Get a PDF copy of our full capability statement for your records.
               </p>
-              <Button size="lg" className="mt-5" disabled>
-                <FileDown className="mr-2 h-5 w-5" /> Download PDF (Coming Soon)
+              <Button size="lg" className="mt-5" asChild>
+                <a href="/capability-statement.pdf" download="Capability-Statement.pdf">
+                  <FileDown className="mr-2 h-5 w-5" /> Download PDF
+                </a>
               </Button>
             </div>
           </div>
