@@ -14,7 +14,6 @@ const serviceCategories = [
     services: [
       "Cleaning Services",
       "Building repairs & upkeep",
-      "Heating & cooling systems",
       "Pest control",
       "Waste removal & recycling",
       "Energy saving & green solutions",
