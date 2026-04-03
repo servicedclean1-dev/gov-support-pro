@@ -82,7 +82,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-sm font-medium text-foreground">Location</p>
-                    <p className="text-sm text-muted-foreground">Washington, D.C. Metro Area</p>
+                    <p className="text-sm text-muted-foreground">London, United Kingdom</p>
                   </div>
                 </div>
               </div>
