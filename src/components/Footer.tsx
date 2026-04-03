@@ -4,21 +4,23 @@ export default function Footer() {
   return (
     <footer className="border-t bg-navy-deep text-primary-foreground">
       <div className="container py-12">
-        <div className="grid gap-8 md:grid-cols-3">
-          <div>
+        <div className="grid gap-8 md:grid-cols-4">
+          <div className="md:col-span-2">
             <h3 className="font-heading text-lg font-bold">[INSERT YOUR COMPANY NAME]</h3>
-            <p className="mt-2 text-sm text-primary-foreground/70">
-              Integrated Facilities &amp; Operational Support Services for Government and Commercial Clients.
+            <p className="mt-3 max-w-md text-sm leading-relaxed text-primary-foreground/70">
+              An integrated government services company delivering facilities management, logistics, and operational support across the public sector.
             </p>
           </div>
           <div>
-            <h4 className="font-heading text-sm font-semibold uppercase tracking-wider text-primary-foreground/60">Quick Links</h4>
+            <h4 className="font-heading text-sm font-semibold uppercase tracking-wider text-primary-foreground/60">
+              Quick Links
+            </h4>
             <ul className="mt-3 space-y-2 text-sm">
               {[
                 { to: "/services", label: "Services" },
                 { to: "/about", label: "About Us" },
                 { to: "/capability-statement", label: "Capability Statement" },
-                { to: "/contact", label: "Request a Quote" },
+                { to: "/contact", label: "Contact" },
               ].map((l) => (
                 <li key={l.to}>
                   <Link to={l.to} className="text-primary-foreground/70 transition-colors hover:text-primary-foreground">
@@ -29,7 +31,9 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="font-heading text-sm font-semibold uppercase tracking-wider text-primary-foreground/60">Contact</h4>
+            <h4 className="font-heading text-sm font-semibold uppercase tracking-wider text-primary-foreground/60">
+              Contact
+            </h4>
             <ul className="mt-3 space-y-2 text-sm text-primary-foreground/70">
               <li>info@yourcompany.com</li>
               <li>(555) 000-0000</li>

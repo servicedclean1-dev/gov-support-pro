@@ -18,33 +18,31 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80">
       <div className="container flex h-16 items-center justify-between">
-        <Link to="/" className="font-heading text-xl font-bold text-primary">
+        <Link to="/" className="font-heading text-lg font-bold text-primary md:text-xl">
           [INSERT YOUR COMPANY NAME]
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden items-center gap-1 md:flex">
+        <nav className="hidden items-center gap-1 lg:flex">
           {navLinks.map((link) => (
             <Link
               key={link.to}
               to={link.to}
               className={`rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-secondary ${
-                location.pathname === link.to
-                  ? "text-primary"
-                  : "text-muted-foreground"
+                location.pathname === link.to ? "text-primary" : "text-muted-foreground"
               }`}
             >
               {link.label}
             </Link>
           ))}
           <Button asChild size="sm" className="ml-3">
-            <Link to="/contact">Request a Quote</Link>
+            <Link to="/contact">Get in Touch</Link>
           </Button>
         </nav>
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden"
+          className="lg:hidden"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
@@ -54,16 +52,14 @@ export default function Header() {
 
       {/* Mobile nav */}
       {mobileOpen && (
-        <nav className="border-t bg-card px-4 pb-4 md:hidden">
+        <nav className="border-t bg-card px-4 pb-4 lg:hidden">
           {navLinks.map((link) => (
             <Link
               key={link.to}
               to={link.to}
               onClick={() => setMobileOpen(false)}
               className={`block rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-secondary ${
-                location.pathname === link.to
-                  ? "text-primary"
-                  : "text-muted-foreground"
+                location.pathname === link.to ? "text-primary" : "text-muted-foreground"
               }`}
             >
               {link.label}
@@ -71,7 +67,7 @@ export default function Header() {
           ))}
           <Button asChild size="sm" className="mt-2 w-full">
             <Link to="/contact" onClick={() => setMobileOpen(false)}>
-              Request a Quote
+              Get in Touch
             </Link>
           </Button>
         </nav>
