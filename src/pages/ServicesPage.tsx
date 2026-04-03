@@ -133,10 +133,10 @@ export default function ServicesPage() {
       <section className="py-20 text-center">
         <div className="container">
           <h2 className="font-heading text-2xl font-bold text-foreground md:text-3xl">
-            Need a Customised Solution?
+            Need Something Specific?
           </h2>
           <p className="mx-auto mt-3 max-w-lg text-muted-foreground">
-            We tailor our services to match your exact requirements. Get in touch for a detailed proposal.
+            We can put together a package that fits exactly what you need. Just get in touch and we'll work it out together.
           </p>
           <Button asChild size="xl" className="mt-8">
             <Link to="/contact">
