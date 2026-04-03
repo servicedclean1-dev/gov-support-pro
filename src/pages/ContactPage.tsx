@@ -7,7 +7,7 @@ import {
   Select, SelectContent, SelectItem, SelectTrigger, SelectValue,
 } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
-import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
+import { Mail, MapPin, ArrowRight } from "lucide-react";
 
 const serviceTypes = [
   "Facilities Management",
@@ -78,15 +78,6 @@ export default function ContactPage() {
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
-                    <Phone className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="text-sm font-medium text-foreground">Phone</p>
-                    <p className="text-sm text-muted-foreground">(555) 000-0000</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
                     <MapPin className="h-5 w-5 text-primary" />
                   </div>
                   <div>
@@ -132,10 +123,6 @@ export default function ContactPage() {
                     <div className="space-y-2">
                       <Label htmlFor="email">Email Address *</Label>
                       <Input id="email" name="email" type="email" required placeholder="john@agency.gov" />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="phone">Phone Number</Label>
-                      <Input id="phone" name="phone" type="tel" placeholder="(555) 000-0000" />
                     </div>
                   </div>
 

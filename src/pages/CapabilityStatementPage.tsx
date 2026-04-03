@@ -68,7 +68,7 @@ export default function CapabilityStatementPage() {
               <div className="mt-4 space-y-1 text-sm text-muted-foreground">
                 <p><strong className="text-foreground">[INSERT YOUR COMPANY NAME]</strong></p>
                 <p>Washington, D.C. Metro Area</p>
-                <p>Phone: (555) 000-0000</p>
+                
                 <p>Email: info@yourcompany.com</p>
                 <p>Website: www.yourcompany.com</p>
               </div>

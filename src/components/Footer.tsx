@@ -36,7 +36,7 @@ export default function Footer() {
             </h4>
             <ul className="mt-3 space-y-2 text-sm text-primary-foreground/70">
               <li>info@yourcompany.com</li>
-              <li>(555) 000-0000</li>
+              
               <li>Washington, D.C. Metro Area</li>
             </ul>
           </div>
