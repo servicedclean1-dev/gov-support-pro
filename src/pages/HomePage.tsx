@@ -151,9 +151,9 @@ export default function HomePage() {
       <section className="border-y bg-secondary/40 py-20">
         <div className="container">
           <div className="mx-auto max-w-2xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-widest text-accent">Core Service Areas</p>
+            <p className="font-semibold uppercase tracking-widest text-accent text-lg">Core Service Areas</p>
             <h2 className="mt-3 font-heading text-2xl font-bold text-foreground md:text-3xl lg:text-4xl">
-              Comprehensive Solutions Across Every Need
+              
             </h2>
           </div>
           <div className="mt-14 grid gap-8 md:grid-cols-2">
