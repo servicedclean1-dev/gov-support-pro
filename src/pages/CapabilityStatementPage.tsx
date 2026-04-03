@@ -53,7 +53,7 @@ export default function CapabilityStatementPage() {
                 <p>London, United Kingdom</p>
                 
                 <p>Email: info@yourcompany.com</p>
-                <p>Website: </p>
+                <p>​</p>
               </div>
             </div>
 
