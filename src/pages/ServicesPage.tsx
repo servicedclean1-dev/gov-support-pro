@@ -12,7 +12,7 @@ const serviceCategories = [
     title: "Facilities Management",
     description: "Comprehensive management of buildings, estates, and infrastructure — ensuring safe, efficient, and well-maintained environments.",
     services: [
-      "Janitorial & custodial services",
+      "Cleaning Services",
       "Building maintenance & repairs",
       "HVAC & mechanical systems",
       "Pest control management",
