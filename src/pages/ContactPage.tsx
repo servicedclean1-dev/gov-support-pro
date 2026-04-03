@@ -16,7 +16,7 @@ const serviceTypes = [
   "Logistics & Warehousing",
   "Staffing & Workforce",
   "Operations / Admin Support",
-  "Care & Support Services",
+  
   "Multiple Services",
   "Other",
 ];

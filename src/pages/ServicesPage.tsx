@@ -89,11 +89,6 @@ export default function ServicesPage() {
                 </div>
                 <h2 className="font-heading text-2xl font-bold text-foreground">
                   {cat.title}
-                  {cat.comingSoon && (
-                    <span className="ml-2 inline-block rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
-                      Coming Soon
-                    </span>
-                  )}
                 </h2>
                 <p className="mt-3 text-muted-foreground leading-relaxed">{cat.description}</p>
               </div>

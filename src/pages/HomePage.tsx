@@ -35,12 +35,6 @@ const coreServices = [
     description: "Reliable transport, warehousing, inventory management, and supply chain coordination for mission-critical operations.",
     color: "bg-trust-green/20 text-trust-green",
   },
-  {
-    icon: HeartPulse,
-    title: "Care & Supported Living",
-    description: "Expanding into compassionate care, community support programmes, and facility-based personal assistance services.",
-    color: "bg-primary/10 text-primary",
-  },
 ];
 
 const whyChooseUs = [
