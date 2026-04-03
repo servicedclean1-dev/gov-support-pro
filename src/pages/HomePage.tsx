@@ -65,7 +65,7 @@ export default function HomePage() {
         <div className="container relative z-10 py-28 md:py-40">
           <div className="max-w-3xl">
             <h1 className="font-heading text-4xl font-extrabold leading-tight text-primary-foreground md:text-5xl lg:text-6xl">
-              Integrated Government Services, Delivered Seamlessly
+              Government Services, Delivered Seamlessly
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-primary-foreground/80 md:text-xl">
               Reliable, scalable, multi-service capability — from facilities management and logistics to operational support. One trusted partner for all your needs.
