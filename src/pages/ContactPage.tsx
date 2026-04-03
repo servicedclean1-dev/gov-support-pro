@@ -124,10 +124,6 @@ export default function ContactPage() {
                       <Label htmlFor="email">Email Address *</Label>
                       <Input id="email" name="email" type="email" required placeholder="john@agency.gov" />
                     </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="phone">Phone Number</Label>
-                      <Input id="phone" name="phone" type="tel" placeholder="(555) 000-0000" />
-                    </div>
                   </div>
 
                   <div className="space-y-2">
