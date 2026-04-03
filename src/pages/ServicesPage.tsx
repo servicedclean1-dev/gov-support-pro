@@ -46,18 +46,6 @@ const serviceCategories = [
       "Asset tracking & management",
     ],
   },
-  {
-    icon: HeartPulse,
-    title: "Care & Supported Living",
-    description: "Expanding our service portfolio into compassionate care and community support for government-sponsored programmes.",
-    services: [
-      "Personal care assistance",
-      "Community support programmes",
-      "Facility-based care support",
-      "Programme administration",
-    ],
-    comingSoon: true,
-  },
 ];
 
 const additionalServices = [
