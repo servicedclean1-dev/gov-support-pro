@@ -202,9 +202,9 @@ export default function HomePage() {
       <section className="border-y bg-navy-deep py-20">
         <div className="container">
           <div className="mx-auto max-w-2xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-widest text-accent-foreground/60">Industries We Serve</p>
+            <p className="font-semibold uppercase tracking-widest text-accent-foreground/60 text-lg">Industries We Serve</p>
             <h2 className="mt-3 font-heading text-2xl font-bold text-primary-foreground md:text-3xl">
-              Industries We Serve
+              
             </h2>
           </div>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
