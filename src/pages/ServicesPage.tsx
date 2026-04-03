@@ -114,8 +114,8 @@ export default function ServicesPage() {
           <h2 className="text-center font-heading text-2xl font-bold text-foreground md:text-3xl">
             Additional Capabilities
           </h2>
-          <p className="mx-auto mt-3 max-w-xl text-center text-muted-foreground">
-            Beyond our core service areas, we deliver specialist support across a range of operational needs.
+           <p className="mx-auto mt-3 max-w-xl text-center text-muted-foreground">
+            On top of our main services, here are some extra things we can help with.
           </p>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
             {additionalServices.map((s) => (
