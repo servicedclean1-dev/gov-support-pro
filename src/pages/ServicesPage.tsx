@@ -112,7 +112,7 @@ export default function ServicesPage() {
       <section className="border-y bg-secondary/40 py-20">
         <div className="container">
           <h2 className="text-center font-heading text-2xl font-bold text-foreground md:text-3xl">
-            Additional Capabilities
+            What Else We Can Do
           </h2>
            <p className="mx-auto mt-3 max-w-xl text-center text-muted-foreground">
             On top of our main services, here are some extra things we can help with.
