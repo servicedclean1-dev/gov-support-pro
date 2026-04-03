@@ -28,7 +28,7 @@ export default function CapabilityStatementPage() {
               <div className="mt-5 grid gap-3 sm:grid-cols-2">
                 {[
                   "Facilities Management & Maintenance",
-                  "Janitorial & Custodial Services",
+                  "Cleaning Services",
                   "Logistics & Warehousing",
                   "Staffing & Workforce Solutions",
                   "Operations & Administrative Support",
