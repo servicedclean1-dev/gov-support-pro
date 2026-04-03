@@ -72,7 +72,7 @@ export default function ServicesPage() {
               Our Services
             </h1>
             <p className="mt-4 max-w-2xl text-lg text-primary-foreground/80">
-              Comprehensive, scalable solutions across facilities management, logistics, and operations — delivered with government-grade reliability and accountability.
+              We handle buildings, deliveries, and day-to-day operations — so you can focus on what matters most. Reliable, flexible, and built for the public sector.
             </p>
           </div>
         </div>
