@@ -10,50 +10,50 @@ const serviceCategories = [
   {
     icon: Building2,
     title: "Facilities Management",
-    description: "Comprehensive management of buildings, estates, and infrastructure — ensuring safe, efficient, and well-maintained environments.",
+    description: "We look after your buildings and spaces — keeping everything clean, safe, and running smoothly so you don't have to worry about it.",
     services: [
       "Cleaning Services",
-      "Building maintenance & repairs",
-      "HVAC & mechanical systems",
-      "Pest control management",
-      "Waste management & recycling",
-      "Energy management & sustainability",
+      "Building repairs & upkeep",
+      "Heating & cooling systems",
+      "Pest control",
+      "Waste removal & recycling",
+      "Energy saving & green solutions",
     ],
   },
   {
     icon: Users,
     title: "Operational Support",
-    description: "Skilled personnel, administrative support, and operational coordination tailored to government and public sector needs.",
+    description: "We provide the people and support you need — from office staff and receptionists to project helpers and data entry teams.",
     services: [
-      "Staffing & workforce solutions",
-      "Administrative & clerical support",
-      "Mailroom & document management",
-      "Reception & front desk services",
-      "Data entry & records management",
-      "Project coordination support",
+      "Staff & team solutions",
+      "Office & admin help",
+      "Mail & document handling",
+      "Reception & front desk cover",
+      "Data entry & record keeping",
+      "Project support & coordination",
     ],
   },
   {
     icon: Truck,
     title: "Logistics & Distribution",
-    description: "Reliable logistics, transport, and supply chain services that keep your operations moving efficiently.",
+    description: "We move, store, and deliver what you need — on time and hassle-free, so your operations keep running without interruption.",
     services: [
-      "Delivery & distribution services",
-      "Warehousing & inventory management",
+      "Deliveries & distribution",
+      "Storage & stock management",
       "Supply chain coordination",
-      "Fleet support & transportation",
+      "Transport & fleet support",
       "Material handling & storage",
-      "Asset tracking & management",
+      "Tracking & managing assets",
     ],
   },
 ];
 
 const additionalServices = [
-  { icon: Sparkles, title: "Cleaning Services", description: "Commercial, public sector, and specialist cleaning across all environments." },
-  { icon: TreePine, title: "Grounds Maintenance", description: "Landscaping, grass cutting, and outdoor maintenance for every setting." },
-  { icon: Wrench, title: "Reactive Maintenance", description: "Fast, reliable repairs and minor works when you need them most." },
-  { icon: PackageCheck, title: "Supply Chain", description: "End-to-end coordination from procurement to delivery." },
-  { icon: ClipboardList, title: "Site Management", description: "On-site coordination and management of multi-service operations." },
+  { icon: Sparkles, title: "Cleaning Services", description: "Professional cleaning for offices, public buildings, and specialist spaces." },
+  { icon: TreePine, title: "Grounds Maintenance", description: "Lawn care, landscaping, and keeping outdoor areas tidy and presentable." },
+  { icon: Wrench, title: "Reactive Maintenance", description: "Quick fixes and repairs when something breaks or needs urgent attention." },
+  { icon: PackageCheck, title: "Supply Chain", description: "Managing the full process from ordering supplies to getting them delivered." },
+  { icon: ClipboardList, title: "Site Management", description: "Running and coordinating day-to-day operations on your site." },
 ];
 
 export default function ServicesPage() {
@@ -72,7 +72,7 @@ export default function ServicesPage() {
               Our Services
             </h1>
             <p className="mt-4 max-w-2xl text-lg text-primary-foreground/80">
-              Comprehensive, scalable solutions across facilities management, logistics, and operations — delivered with government-grade reliability and accountability.
+              We handle buildings, deliveries, and day-to-day operations — so you can focus on what matters most. Reliable, flexible, and built for the public sector.
             </p>
           </div>
         </div>
@@ -112,10 +112,10 @@ export default function ServicesPage() {
       <section className="border-y bg-secondary/40 py-20">
         <div className="container">
           <h2 className="text-center font-heading text-2xl font-bold text-foreground md:text-3xl">
-            Additional Capabilities
+            What Else We Can Do
           </h2>
-          <p className="mx-auto mt-3 max-w-xl text-center text-muted-foreground">
-            Beyond our core service areas, we deliver specialist support across a range of operational needs.
+           <p className="mx-auto mt-3 max-w-xl text-center text-muted-foreground">
+            On top of our main services, here are some extra things we can help with.
           </p>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
             {additionalServices.map((s) => (
@@ -133,10 +133,10 @@ export default function ServicesPage() {
       <section className="py-20 text-center">
         <div className="container">
           <h2 className="font-heading text-2xl font-bold text-foreground md:text-3xl">
-            Need a Customised Solution?
+            Need Something Specific?
           </h2>
           <p className="mx-auto mt-3 max-w-lg text-muted-foreground">
-            We tailor our services to match your exact requirements. Get in touch for a detailed proposal.
+            We can put together a package that fits exactly what you need. Just get in touch and we'll work it out together.
           </p>
           <Button asChild size="xl" className="mt-8">
             <Link to="/contact">
