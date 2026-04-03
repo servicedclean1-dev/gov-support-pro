@@ -62,26 +62,6 @@ export default function CapabilityStatementPage() {
               </ul>
             </div>
 
-            {/* NAICS Codes */}
-            <div>
-              <h2 className="font-heading text-xl font-bold text-foreground">NAICS Codes</h2>
-              <div className="mt-5 grid gap-3 sm:grid-cols-2">
-                {[
-                  { code: "561210", label: "Facilities Support Services" },
-                  { code: "561720", label: "Janitorial Services" },
-                  { code: "561730", label: "Landscaping Services" },
-                  { code: "493110", label: "General Warehousing & Storage" },
-                  { code: "561320", label: "Temporary Staffing Services" },
-                  { code: "561110", label: "Office Administrative Services" },
-                ].map((n) => (
-                  <div key={n.code} className="rounded-lg border bg-card px-4 py-3">
-                    <span className="text-sm font-semibold text-primary">{n.code}</span>
-                    <span className="ml-2 text-sm text-muted-foreground">— {n.label}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
             {/* Contact Info */}
             <div>
               <h2 className="font-heading text-xl font-bold text-foreground">Contact Information</h2>
