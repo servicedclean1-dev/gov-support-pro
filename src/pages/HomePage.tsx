@@ -165,9 +165,6 @@ export default function HomePage() {
                 <div>
                   <h3 className="font-heading text-lg font-semibold text-card-foreground">{s.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.description}</p>
-                  <Link to="/services" className="mt-3 inline-flex items-center text-sm font-medium text-primary hover:underline">
-                    Learn more <ArrowRight className="ml-1 h-4 w-4" />
-                  </Link>
                 </div>
               </div>
             ))}
