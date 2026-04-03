@@ -49,10 +49,10 @@ export default function CapabilityStatementPage() {
               <h2 className="font-heading text-xl font-bold text-foreground">Differentiators</h2>
               <ul className="mt-5 space-y-4 text-muted-foreground">
                 {[
-                  { title: "Integrated Service Model", desc: "Multiple service lines under one contract, reducing vendor complexity and improving accountability." },
-                  { title: "Scalable Operations", desc: "Structured to grow from single-site to multi-facility engagements without sacrificing quality." },
-                  { title: "Compliance-First Approach", desc: "Built-in quality assurance and regulatory compliance across all operations." },
-                  { title: "Responsive & Reliable", desc: "Dedicated account management and rapid mobilisation capabilities." },
+                  { title: "All-in-One Service", desc: "We handle everything under one contract, so you only deal with one team instead of many." },
+                  { title: "We Grow With You", desc: "Whether you have one location or many, we can scale up without dropping the ball." },
+                  { title: "Rules & Standards Built In", desc: "We make sure everything we do meets the required rules and quality standards from day one." },
+                  { title: "Fast & Dependable", desc: "You get a dedicated point of contact and we can get started quickly when you need us." },
                 ].map((d) => (
                   <li key={d.title} className="flex items-start gap-3">
                     <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-primary" />
