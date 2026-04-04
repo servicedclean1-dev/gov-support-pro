@@ -49,7 +49,7 @@ export default function AboutPage() {
               </h2>
               <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  [INSERT YOUR COMPANY NAME] is committed to delivering reliable, efficient, and scalable support services that enable government agencies and commercial organisations to focus on what matters most.
+                  Serviced Contracting Ltd (SCL) is committed to delivering reliable, efficient, and scalable support services that enable government agencies and commercial organisations to focus on what matters most.
                 </p>
                 <p>
                   We provide integrated solutions across facilities management, logistics, and operations support — all under one roof. Our approach combines the responsiveness of a focused contractor with the systems, processes, and quality standards of a large-scale operation.

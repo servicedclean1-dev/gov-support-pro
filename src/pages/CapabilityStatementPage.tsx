@@ -49,7 +49,7 @@ export default function CapabilityStatementPage() {
             <div>
               <h2 className="font-heading text-xl font-bold text-foreground">Contact Information</h2>
               <div className="mt-4 space-y-1 text-sm text-muted-foreground">
-                <p><strong className="text-foreground">[INSERT YOUR COMPANY NAME]</strong></p>
+                <p><strong className="text-foreground">Serviced Contracting Ltd (SCL)</strong></p>
                 <p>London, United Kingdom</p>
                 
                 <p>Email: info@yourcompany.com</p>
