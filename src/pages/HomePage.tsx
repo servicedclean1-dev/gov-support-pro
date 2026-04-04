@@ -178,7 +178,7 @@ export default function HomePage() {
           <div className="mx-auto max-w-2xl text-center">
             <p className="text-sm font-semibold uppercase tracking-widest text-accent">Why Choose Us</p>
             <h2 className="mt-3 font-heading text-2xl font-bold text-foreground md:text-3xl lg:text-4xl">
-              Built for Government. Designed for Scale.
+              Designed for Scale
             </h2>
             <p className="mt-4 text-muted-foreground">
               We operate with the discipline, transparency, and accountability that government clients demand.
