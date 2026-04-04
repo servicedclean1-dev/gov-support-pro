@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import sclLogo from "@/assets/scl-logo.png";
 
 const navLinks = [
   { to: "/", label: "Home" },
