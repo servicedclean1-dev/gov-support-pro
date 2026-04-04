@@ -38,7 +38,7 @@ export default function Footer() {
               Contact
             </h4>
             <ul className="mt-3 space-y-2 text-sm text-primary-foreground/70">
-              <li>info@yourcompany.com</li>
+              <li>info@servicedcontracting.com</li>
               
               <li>London, United Kingdom</li>
             </ul>
