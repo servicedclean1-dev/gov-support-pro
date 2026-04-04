@@ -82,7 +82,7 @@ export default function CapabilityStatementPage() {
                 Get a PDF copy of our full capability statement for your records.
               </p>
               <Button size="lg" className="mt-5" asChild>
-                <a href="/capability-statement.pdf?v=20260404-clean" download="Capability-Statement.pdf">
+                <a href="/capability-statement.pdf?v=20260404-clean2" download="Capability-Statement.pdf">
                   <FileDown className="mr-2 h-5 w-5" /> Download PDF
                 </a>
               </Button>
