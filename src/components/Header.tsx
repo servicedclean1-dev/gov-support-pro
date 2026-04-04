@@ -18,7 +18,8 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80">
       <div className="container flex h-16 items-center justify-between">
-        <Link to="/" className="font-heading text-lg font-bold text-primary md:text-xl">
+        <Link to="/" className="flex items-center gap-2 font-heading text-lg font-bold text-primary md:text-xl">
+          <img src={sclLogo} alt="SCL Logo" className="h-8 w-8 rounded-full object-cover" />
           SCL
         </Link>
 

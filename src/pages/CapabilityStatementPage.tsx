@@ -48,13 +48,10 @@ export default function CapabilityStatementPage() {
             {/* Contact Info */}
             <div>
               <h2 className="font-heading text-xl font-bold text-foreground">Contact Information</h2>
-              <div className="mt-4 flex items-start gap-4">
-                <img src={sclLogo} alt="SCL Logo" className="h-14 w-14 rounded-full object-cover" />
-                <div className="space-y-1 text-sm text-muted-foreground">
-                  <p><strong className="text-foreground">Serviced Contracting Ltd (SCL)</strong></p>
-                  <p>London, United Kingdom</p>
-                  <p>Email: info@servicedcontracting.com</p>
-                </div>
+              <div className="mt-4 space-y-1 text-sm text-muted-foreground">
+                <p><strong className="text-foreground">Serviced Contracting Ltd (SCL)</strong></p>
+                <p>London, United Kingdom</p>
+                <p>Email: info@servicedcontracting.com</p>
               </div>
             </div>
 
