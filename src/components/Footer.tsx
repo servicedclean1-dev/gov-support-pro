@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container py-12">
         <div className="grid gap-8 md:grid-cols-4">
           <div className="md:col-span-2">
-            <h3 className="font-heading text-lg font-bold">[INSERT YOUR COMPANY NAME]</h3>
+            <h3 className="font-heading text-lg font-bold">SCL</h3>
             <p className="mt-3 max-w-md text-sm leading-relaxed text-primary-foreground/70">
               A contracting company delivering facilities management, logistics, and operational support across multiple sector.
             </p>
@@ -41,7 +41,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-10 border-t border-primary-foreground/10 pt-6 text-center text-xs text-primary-foreground/50">
-          © {new Date().getFullYear()} [INSERT YOUR COMPANY NAME]. All rights reserved. &nbsp;|&nbsp; Committed to Compliance and Quality Standards
+          © {new Date().getFullYear()} Serviced Contracting Ltd. All rights reserved. &nbsp;|&nbsp; Committed to Compliance and Quality Standards
         </div>
       </div>
     </footer>
