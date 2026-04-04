@@ -108,7 +108,7 @@ export default function AboutPage() {
               Quality and compliance are foundational to every service we deliver. Our operations are designed around best practices, industry standards, and regulatory requirements, ensuring that every engagement meets the highest expectations.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              We invest in our people through continuous training, leverage proven processes, and maintain the documentation and reporting standards that government clients require.
+              We invest in our people through continuous training, leverage proven processes, and maintain the documentation and reporting standards that our clients require.
             </p>
           </div>
         </div>
