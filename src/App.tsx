@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import HomePage from "@/pages/HomePage";
 import ServicesPage from "@/pages/ServicesPage";
 import AboutPage from "@/pages/AboutPage";
@@ -33,6 +34,7 @@ const App = () => (
             </Routes>
           </main>
           <Footer />
+          <WhatsAppButton />
         </div>
       </BrowserRouter>
     </TooltipProvider>
