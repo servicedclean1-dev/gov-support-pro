@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { FileDown, CheckCircle } from "lucide-react";
-import sclLogo from "@/assets/scl-logo.png";
 
 export default function CapabilityStatementPage() {
   return (
