@@ -69,6 +69,24 @@ export default function CapabilityStatementPage() {
                 </a>
               </Button>
             </div>
+
+            {/* Previous Work / Portfolio */}
+            <div>
+              <h2 className="font-heading text-xl font-bold text-foreground">Our Previous Work</h2>
+              <p className="mt-2 text-sm text-muted-foreground">
+                A showcase of projects we have delivered overseas. Photos and videos coming soon.
+              </p>
+              <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {Array.from({ length: 6 }).map((_, i) => (
+                  <div
+                    key={i}
+                    className="flex aspect-video items-center justify-center rounded-lg border-2 border-dashed border-muted-foreground/25 bg-muted/30"
+                  >
+                    <span className="text-xs text-muted-foreground/50">Coming Soon</span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
