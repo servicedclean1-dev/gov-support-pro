@@ -41,7 +41,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-10 border-t border-primary-foreground/10 pt-6 text-center text-xs text-primary-foreground/50">
-          © {new Date().getFullYear()} [INSERT YOUR COMPANY NAME]. All rights reserved. &nbsp;|&nbsp; Committed to Compliance and Quality Standards
+          © {new Date().getFullYear()} Serviced Contracting Ltd. All rights reserved. &nbsp;|&nbsp; Committed to Compliance and Quality Standards
         </div>
       </div>
     </footer>
