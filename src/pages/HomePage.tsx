@@ -91,7 +91,7 @@ export default function HomePage() {
             <div>
               <p className="text-sm font-semibold uppercase tracking-widest text-accent">Who We Are</p>
               <h2 className="mt-3 font-heading font-bold text-foreground md:text-3xl lg:text-4xl text-2xl">
-                A government services company managing multiple service areas under one roof
+                A contracting company managing multiple contract areas under one roof
               </h2>
               <p className="mt-5 text-muted-foreground leading-relaxed">
                 We deliver end-to-end services with the efficiency of a single provider and the depth of a specialist. Our focus is the government and public sector — where reliability, compliance, and accountability are non-negotiable.
