@@ -32,7 +32,7 @@ export default function AboutPage() {
               A Trusted Partner for Government & Public Sector Services
             </h1>
             <p className="mt-4 max-w-2xl text-lg text-primary-foreground/80">
-              Delivering integrated facilities and operational support with the reliability, compliance, and professionalism that government clients demand.
+              Delivering integrated facilities and operational support with the reliability, compliance, and professionalism that our clients demand.
             </p>
           </div>
         </div>
