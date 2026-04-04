@@ -20,7 +20,6 @@ export default function Footer() {
                 { to: "/services", label: "Services" },
                 { to: "/about", label: "About Us" },
                 { to: "/capability-statement", label: "Capability Statement" },
-                { to: "/contact", label: "Contact" },
               ].map((l) => (
                 <li key={l.to}>
                   <Link to={l.to} className="text-primary-foreground/70 transition-colors hover:text-primary-foreground">
