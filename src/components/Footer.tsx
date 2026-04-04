@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import sclLogoWhite from "@/assets/scl-logo-white.png";
 
 export default function Footer() {
   return (
@@ -6,7 +7,10 @@ export default function Footer() {
       <div className="container py-12">
         <div className="grid gap-8 md:grid-cols-4">
           <div className="md:col-span-2">
-            <h3 className="font-heading text-lg font-bold">SCL</h3>
+            <div className="flex items-center gap-2">
+              <img src={sclLogoWhite} alt="SCL Logo" className="h-8 w-8 object-contain" />
+              <h3 className="font-heading text-lg font-bold">SCL</h3>
+            </div>
             <p className="mt-3 max-w-md text-sm leading-relaxed text-primary-foreground/70">
               A contracting company delivering facilities management, logistics, and operational support across multiple sector.
             </p>
@@ -34,7 +38,7 @@ export default function Footer() {
               Contact
             </h4>
             <ul className="mt-3 space-y-2 text-sm text-primary-foreground/70">
-              <li>info@yourcompany.com</li>
+              <li>info@servicedcontracting.com</li>
               
               <li>London, United Kingdom</li>
             </ul>
