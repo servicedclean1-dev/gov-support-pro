@@ -57,19 +57,6 @@ export default function CapabilityStatementPage() {
               </div>
             </div>
 
-            {/* Download */}
-            <div className="rounded-xl border bg-secondary/50 p-8 text-center">
-              <h3 className="font-heading text-lg font-semibold text-foreground">Download Capability Statement</h3>
-              <p className="mt-2 text-sm text-muted-foreground">
-                Get a PDF copy of our full capability statement for your records.
-              </p>
-              <Button size="lg" className="mt-5" asChild>
-                <a href="/capability-statement.pdf" download="Capability-Statement.pdf">
-                  <FileDown className="mr-2 h-5 w-5" /> Download PDF
-                </a>
-              </Button>
-            </div>
-
             {/* Previous Work / Portfolio */}
             <div>
               <h2 className="font-heading text-xl font-bold text-foreground">Our Previous Work</h2>
@@ -86,6 +73,19 @@ export default function CapabilityStatementPage() {
                   </div>
                 ))}
               </div>
+            </div>
+
+            {/* Download */}
+            <div className="rounded-xl border bg-secondary/50 p-8 text-center">
+              <h3 className="font-heading text-lg font-semibold text-foreground">Download Capability Statement</h3>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Get a PDF copy of our full capability statement for your records.
+              </p>
+              <Button size="lg" className="mt-5" asChild>
+                <a href="/capability-statement.pdf" download="Capability-Statement.pdf">
+                  <FileDown className="mr-2 h-5 w-5" /> Download PDF
+                </a>
+              </Button>
             </div>
           </div>
         </div>
