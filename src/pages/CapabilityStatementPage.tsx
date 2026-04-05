@@ -1,5 +1,15 @@
 import { Button } from "@/components/ui/button";
-import { FileDown, CheckCircle } from "lucide-react";
+import { FileDown, CheckCircle, Play } from "lucide-react";
+import { useState } from "react";
+
+const portfolioItems = [
+  { type: "image" as const, src: "/portfolio/photo1.jpg", alt: "Road construction and marking project" },
+  { type: "video" as const, src: "/portfolio/video1.mp4", alt: "Project video 1" },
+  { type: "image" as const, src: "/portfolio/photo2.jpg", alt: "Completed road with lane markings" },
+  { type: "video" as const, src: "/portfolio/video2.mp4", alt: "Project video 2" },
+  { type: "video" as const, src: "/portfolio/video3.mp4", alt: "Project video 3" },
+  { type: "video" as const, src: "/portfolio/video4.mp4", alt: "Project video 4" },
+];
 
 export default function CapabilityStatementPage() {
   return (
@@ -44,7 +54,6 @@ export default function CapabilityStatementPage() {
               </div>
             </div>
 
-
             {/* Contact Info */}
             <div>
               <h2 className="font-heading text-xl font-bold text-foreground">Contact Information</h2>
@@ -59,15 +68,26 @@ export default function CapabilityStatementPage() {
             <div>
               <h2 className="font-heading text-xl font-bold text-foreground">Our Previous Work</h2>
               <p className="mt-2 text-sm text-muted-foreground">
-                A showcase of projects we have delivered overseas. Photos and videos coming soon.
+                A showcase of projects we have delivered overseas.
               </p>
               <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {Array.from({ length: 6 }).map((_, i) => (
-                  <div
-                    key={i}
-                    className="flex aspect-video items-center justify-center rounded-lg border-2 border-dashed border-muted-foreground/25 bg-muted/30"
-                  >
-                    <span className="text-xs text-muted-foreground/50">Coming Soon</span>
+                {portfolioItems.map((item, i) => (
+                  <div key={i} className="overflow-hidden rounded-lg border bg-card">
+                    {item.type === "image" ? (
+                      <img
+                        src={item.src}
+                        alt={item.alt}
+                        className="aspect-video w-full object-cover"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <video
+                        src={item.src}
+                        controls
+                        preload="metadata"
+                        className="aspect-video w-full object-cover"
+                      />
+                    )}
                   </div>
                 ))}
               </div>
