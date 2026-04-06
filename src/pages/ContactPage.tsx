@@ -65,6 +65,7 @@ export default function ContactPage() {
         description: "Thank you. Our team will review your enquiry and respond within 1–2 business days.",
       });
       form.reset();
+      setServiceType("");
     } catch (error) {
       console.error("Error sending form:", error);
       toast({
