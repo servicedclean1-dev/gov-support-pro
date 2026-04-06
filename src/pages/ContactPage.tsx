@@ -167,7 +167,7 @@ export default function ContactPage() {
 
                   <div className="space-y-2">
                     <Label htmlFor="serviceType">Service Area of Interest *</Label>
-                    <Select name="serviceType" required>
+                    <Select value={serviceType} onValueChange={setServiceType} required>
                       <SelectTrigger>
                         <SelectValue placeholder="Select a service category" />
                       </SelectTrigger>
