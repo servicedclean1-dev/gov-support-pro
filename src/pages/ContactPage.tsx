@@ -29,17 +29,28 @@ export default function ContactPage() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitting(true);
 
     const form = e.target as HTMLFormElement;
+    const nativeFormData = new FormData(form);
     const formData = {
-      name: (form.elements.namedItem("name") as HTMLInputElement).value,
-      organization: (form.elements.namedItem("organization") as HTMLInputElement).value,
-      email: (form.elements.namedItem("email") as HTMLInputElement).value,
-      serviceType,
-      message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+      name: String(nativeFormData.get("name") ?? "").trim(),
+      organization: String(nativeFormData.get("organization") ?? "").trim(),
+      email: String(nativeFormData.get("email") ?? "").trim(),
+      serviceType: String(nativeFormData.get("serviceType") ?? "").trim(),
+      message: String(nativeFormData.get("message") ?? "").trim(),
       submitted_at: new Date().toISOString(),
     };
+
+    if (!formData.serviceType) {
+      toast({
+        title: "Service Area Required",
+        description: "Please select a service category before sending your enquiry.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setSubmitting(true);
 
     try {
       if (!ZAPIER_WEBHOOK_URL) {
@@ -55,9 +66,8 @@ export default function ContactPage() {
 
       await fetch(ZAPIER_WEBHOOK_URL, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
         mode: "no-cors",
-        body: JSON.stringify(formData),
+        body: new URLSearchParams(formData),
       });
 
       toast({
@@ -167,8 +177,9 @@ export default function ContactPage() {
 
                   <div className="space-y-2">
                     <Label htmlFor="serviceType">Service Area of Interest *</Label>
-                    <Select value={serviceType} onValueChange={setServiceType} required>
-                      <SelectTrigger>
+                    <input type="hidden" name="serviceType" value={serviceType} />
+                    <Select value={serviceType} onValueChange={setServiceType}>
+                      <SelectTrigger id="serviceType" aria-label="Service Area of Interest">
                         <SelectValue placeholder="Select a service category" />
                       </SelectTrigger>
                       <SelectContent>
