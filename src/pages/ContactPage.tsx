@@ -25,6 +25,7 @@ const serviceTypes = [
 export default function ContactPage() {
   const { toast } = useToast();
   const [submitting, setSubmitting] = useState(false);
+  const [serviceType, setServiceType] = useState("");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -35,18 +36,10 @@ export default function ContactPage() {
       name: (form.elements.namedItem("name") as HTMLInputElement).value,
       organization: (form.elements.namedItem("organization") as HTMLInputElement).value,
       email: (form.elements.namedItem("email") as HTMLInputElement).value,
-      serviceType: (form.querySelector('[name="serviceType"]') as HTMLElement)?.closest('[data-radix-select-viewport]')
-        ? form.querySelector('[name="serviceType"] + span')?.textContent || ""
-        : "",
+      serviceType,
       message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
       submitted_at: new Date().toISOString(),
     };
-
-    // Get the selected service type from the Select component's displayed value
-    const selectTrigger = form.querySelector('[role="combobox"]');
-    if (selectTrigger) {
-      formData.serviceType = selectTrigger.textContent || "";
-    }
 
     try {
       if (!ZAPIER_WEBHOOK_URL) {
@@ -72,6 +65,7 @@ export default function ContactPage() {
         description: "Thank you. Our team will review your enquiry and respond within 1–2 business days.",
       });
       form.reset();
+      setServiceType("");
     } catch (error) {
       console.error("Error sending form:", error);
       toast({
@@ -173,7 +167,7 @@ export default function ContactPage() {
 
                   <div className="space-y-2">
                     <Label htmlFor="serviceType">Service Area of Interest *</Label>
-                    <Select name="serviceType" required>
+                    <Select value={serviceType} onValueChange={setServiceType} required>
                       <SelectTrigger>
                         <SelectValue placeholder="Select a service category" />
                       </SelectTrigger>
