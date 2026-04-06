@@ -9,6 +9,8 @@ import {
 import { useToast } from "@/hooks/use-toast";
 import { Mail, MapPin, ArrowRight } from "lucide-react";
 
+const ZAPIER_WEBHOOK_URL = ""; // Paste your Zapier webhook URL here
+
 const serviceTypes = [
   "Facilities Management",
   "Cleaning Services",
@@ -16,7 +18,6 @@ const serviceTypes = [
   "Logistics & Warehousing",
   "Staffing & Workforce",
   "Operations / Admin Support",
-  
   "Multiple Services",
   "Other",
 ];
@@ -25,19 +26,63 @@ export default function ContactPage() {
   const { toast } = useToast();
   const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSubmitting(true);
-    setTimeout(() => {
-      setSubmitting(false);
+
+    const form = e.target as HTMLFormElement;
+    const formData = {
+      name: (form.elements.namedItem("name") as HTMLInputElement).value,
+      organization: (form.elements.namedItem("organization") as HTMLInputElement).value,
+      email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      serviceType: (form.querySelector('[name="serviceType"]') as HTMLElement)?.closest('[data-radix-select-viewport]')
+        ? form.querySelector('[name="serviceType"] + span')?.textContent || ""
+        : "",
+      message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+      submitted_at: new Date().toISOString(),
+    };
+
+    // Get the selected service type from the Select component's displayed value
+    const selectTrigger = form.querySelector('[role="combobox"]');
+    if (selectTrigger) {
+      formData.serviceType = selectTrigger.textContent || "";
+    }
+
+    try {
+      if (!ZAPIER_WEBHOOK_URL) {
+        console.warn("Zapier webhook URL not configured");
+        toast({
+          title: "Configuration Needed",
+          description: "The contact form webhook is not yet configured. Please contact us directly at info@servicedcontracting.com.",
+          variant: "destructive",
+        });
+        setSubmitting(false);
+        return;
+      }
+
+      await fetch(ZAPIER_WEBHOOK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        mode: "no-cors",
+        body: JSON.stringify(formData),
+      });
+
       toast({
         title: "Message Sent",
         description: "Thank you. Our team will review your enquiry and respond within 1–2 business days.",
       });
-      (e.target as HTMLFormElement).reset();
-    }, 1000);
+      form.reset();
+    } catch (error) {
+      console.error("Error sending form:", error);
+      toast({
+        title: "Error",
+        description: "Failed to send your message. Please try again or email us at info@servicedcontracting.com.",
+        variant: "destructive",
+      });
+    } finally {
+      setSubmitting(false);
+    }
   };
-
   return (
     <div>
       {/* Hero */}
